@@ -1,0 +1,36 @@
+{
+  "name": "digital-revolution-nft",
+  "version": "1.0.0",
+  "description": "Digital Revolution NFT Collection - A limited edition series of 608 unique NFTs",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:opbnb": "hardhat run scripts/deploy.js --network opBNB",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network opBNBTestnet",
+    "verify:opbnb": "hardhat verify --network opBNB",
+    "verify:testnet": "hardhat verify --network opBNBTestnet",
+    "generate:metadata": "node scripts/generate-final-metadata.js",
+    "upload:ipfs": "node scripts/upload-to-ipfs.js",
+    "deploy:goerli": "hardhat run scripts/deploy.js --network goerli"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1",
+    "nft.storage": "^7.1.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.17.3"
+  },
+  "keywords": [
+    "nft",
+    "opbnb",
+    "digital-revolution",
+    "blockchain",
+    "smart-contract"
+  ],
+  "author": "pielancer",
+  "license": "MIT"
+}
